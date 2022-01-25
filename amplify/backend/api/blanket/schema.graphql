@@ -1,0 +1,13 @@
+type Gender {
+  male: Boolean
+  female: Boolean
+  other: String
+}
+
+type Home @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  age: String
+  sex: Gender
+}
+ 
